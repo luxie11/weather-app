@@ -2,11 +2,10 @@ const request = require('request');
 
 const geocodeAddress = (address, callback) =>{
     var encodedValue = encodeURIComponent(address);
-
-    //Reikia, kad vartotojas ivestu Geguziu 73 Siauliai
-
+	
+	var key = 'ENTER_GOOGLE_API_GEOCODE_KEY';
     request({
-        url:`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDaHcZvSyInIGROtyZ6i37hPBlI-qZhSQc&address=${encodedValue}`,
+        url:`https://maps.googleapis.com/maps/api/geocode/json?key=${key}&address=${encodedValue}`,
         json: true
     },(error, response, body)=>{
         if(error){
@@ -19,13 +18,7 @@ const geocodeAddress = (address, callback) =>{
                 lat:body.results[0].geometry.location.lat,
                 lng:body.results[0].geometry.location.lng
             });
-            // console.log(`Address: ${body.results[0].formatted_address}\n`);
-            // console.log(`Latitude: ${body.results[0].geometry.location.lat}`);
-            // console.log(`Longitude: ${body.results[0].geometry.location.lng}`);
         }
-        // console.log(`Address: ${body.results[0].locations[0].street}, ${body.results[0].locations[0].adminArea3},${body.results[0].locations[0].adminArea1}\n`);
-        // console.log(`Latitude: ${body.results[0].locations[0].latLng.lat}`);
-        // console.log(`Longitude: ${body.results[0].locations[0].latLng.lng}`); 
     });
 };
 
