@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style>
+    
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;padding:0;margin:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+
+
+body {
+background: url("../images/background.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+}
+
+body a {
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+-moz-transition :0.5s all;
+-o-transition: 0.5s all;
+-ms-transition: 0.5s all;
+text-decoration: none;
+}
+
+h1 {
+font-size: 50px;
+font-weight: 400;
+color: #F9F9F9;
+font-family: 'Oxygen', sans-serif;
+letter-spacing: 7px;
+margin-top: 50px;
+}
+
+.container {
+width: 65%;
+margin: 50px auto;
+background-color: rgba(0, 0, 0, 0.73);
+}
+
+.city {
+width: 60%;
+float: left;
+background: url("../images/city.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+min-height: 500px;
+position: relative;
+}
+
+.title {
+float: right;
+font-family: 'Oxygen', sans-serif;
+padding: 30px 30px 0 0;
+}
+
+.title h2 {
+color: #FFF;
+font-size: 30px;
+}
+
+.title h3 {
+font-size: 16px;
+font-weight: 600;
+color: #EEE;
+margin-top: 10px;
+text-align: right;
+}
+
+.date-time {
+position: absolute;
+bottom: 0;
+color: #FFF;
+width: 90%;
+padding: 0 30px 10px 30px;
+font-family: 'Oxygen', sans-serif;
+}
+
+div#txt {
+font-size: 35px;
+font-weight: 100;
+margin-bottom: 10px;
+letter-spacing: 1px;
+}
+
+.dmy {
+width: 50%;
+float: left;
+text-align: left;
+padding-top: 55px;
+}
+
+.temperature {
+width: 50%;
+float: left;
+}
+
+.temperature p {
+font-family: 'Raleway', sans-serif;
+font-size: 125px;
+font-weight: 100;
+}
+
+.temperature p span {
+font-size: 50px;
+font-weight: 200;
+}
+
+.forecast {
+width: 40%;
+float: left;
+}
+
+.forecast-icon {
+margin: 25px 0;
+}
+
+.today-weather h3 {
+font-size: 50px;
+color: #FFF;
+width: 80%;
+margin: 0 auto 20px;
+padding-bottom: 10px;
+border-width: thin;
+border-bottom: 1px solid #EEE;
+}
+
+.today-weather ul li {
+width: 74%;
+margin: 0 auto;
+line-height: 39px;
+border-width: thin;
+border-bottom: 1px solid #777;
+color: #EEE;
+font-weight: 600;
+text-align: left;
+padding-left: 20px;
+}
+
+.today-weather ul li span {
+float: right;
+padding-right: 10px;
+}
+
+.today-weather ul li:nth-child(5) {
+border-bottom: none;
+}
+
+.footer {
+padding-bottom: 20px;
+}
+
+.copyright p {
+color: #FFF;
+}
+
+.copyright p a {
+color: #FFF;
+}
+.copyright p a:hover {
+color: #FFEB3B;
+}
+
+</style>
+
+<link href='//fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
+
+<script src="./test.js">
+</script>
+</head>
+<!-- Head -->
+
+
+
+<!-- Body -->
+<body>
+<body>
+	<!-- Heading -->
+	<h1>NEW YORK WEATHER WIDGET</h1>
+	<!-- //Headng -->
+		<!-- Container -->
+		<div class="container">
+
+			<!-- City -->
+			<div class="city">
+				<div class="title">
+					<h2>New York City</h2>
+					<h3>NEW YORK</h3>
+				</div>
+				<div class="date-time">
+					<div class="dmy">
+						<div id="txt"></div>
+						<div class="date">
+							<!-- Date-JavaScript -->
+							<script type="text/javascript">
+							// var mydate=new Date()
+							// var year=mydate.getYear()
+							// if(year<1000)
+							// year+=1900
+							// var day=mydate.getDay()
+							// var month=mydate.getMonth()
+							// var daym=mydate.getDate()
+							// if(daym<10)
+							// daym="0"+daym
+							// var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+							// var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+							// document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
+							</script>
+							<!-- //Date-JavaScript -->
+						</div>
+					</div>
+					<div class="temperature">
+						<p>20°<span>C</span></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- //City -->
+
+			<!-- Forecast -->
+			<div class="forecast">
+				<div class="forecast-icon">
+					<img src="images/forecast.png" alt="New York Weather Widget">
+				</div>
+				<div class="today-weather">
+					<h3>Cloudy</h3>
+					<ul>
+						<li>Dabartine <span class="test"> </span></li>
+						<li>09:00 <span> 22°C</span></li>
+						<li>12:00 <span> 24°C</span></li>
+						<li>15:00 <span> 23°C</span></li>
+						<li>18:00 <span> 20°C</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //Forecast -->
+			<div class="clear"></div>
+
+		</div>
+		<!-- //Container -->
+	<!-- Footer -->
+	<div class="footer">
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<p><a></a>Lukas Matjusaitis</a></p>
+		</div>
+		<!-- //Copyright -->
+
+	</div>
+	<!-- //Footer -->
+
+		<!-- Time-JavaScript -->
+		<script>
+			// function startTime() {
+			// 	var today = new Date();
+			// 	var h = today.getHours();
+			// 	var m = today.getMinutes();
+			// 	var s = today.getSeconds();
+			// 	m = checkTime(m);
+			// 	s = checkTime(s);
+			// 	document.getElementById('txt').innerHTML =
+			// 	h + ":" + m + ":" + s;
+			// 	var t = setTimeout(startTime, 500);
+			// 	}
+			// 	function checkTime(i) {
+			// 	if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
+			// 	return i;
+			//}
+		</script>
+		<!-- //Time-JavaScript -->
+</body>
+
+
+
+</html>
